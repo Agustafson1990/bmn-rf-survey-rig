@@ -1,0 +1,34 @@
+# Secrets — never commit
+*.key
+*.pem
+*.pfx
+*.env
+secrets.toml
+config.toml.local
+*_secret.*
+
+# Session state
+99_SESSION_STATE/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python / SQLite runtime
+__pycache__/
+*.pyc
+*.sqlite
+*.sqlite-journal
+
+# Recording artifacts (don't commit audio captures)
+recordings/
+*.wav
+*.mp3
+*.mp4

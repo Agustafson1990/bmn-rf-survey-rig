@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BMN repo banner — drop-in header for project READMEs.
+  Tokens sourced from _branding/bmn/bmn-branding.md (v0.1).
+  Edit bmn-rf-survey-rig and TAGLINE text nodes when reusing.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="100%" role="img" aria-label="ByteMe Networks repo banner">
+  <defs>
+    <linearGradient id="lime" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D9F49B"/>
+      <stop offset="100%" stop-color="#B8E26C"/>
+    </linearGradient>
+    <style>
+      .title  { font: 700 56px Montserrat, "Segoe UI", sans-serif; fill: #1A1A1A; letter-spacing: -1px; }
+      .tag    { font: 500 22px Poppins, "Segoe UI", sans-serif; fill: #1A1A1A; }
+      .kicker { font: 600 14px Poppins, "Segoe UI", sans-serif; fill: #1A1A1A; letter-spacing: 4px; text-transform: uppercase; }
+    </style>
+  </defs>
+
+  <!-- Lime field -->
+  <rect width="1200" height="240" fill="url(#lime)"/>
+
+  <!-- Yellow accent stripe (left) -->
+  <rect x="0" y="0" width="14" height="240" fill="#FFE600"/>
+
+  <!-- Black bottom border (per Pattern A header treatment) -->
+  <rect x="0" y="234" width="1200" height="6" fill="#1A1A1A"/>
+
+  <!-- Pac-Man brand mark (matches BMN icon: black body, yellow outline, two eye-ovals) -->
+  <g transform="translate(70,70)">
+    <!-- Body: outlined black Pac-Man, mouth opens right -->
+    <path d="M 92 26 L 50 50 L 92 74 A 48 48 0 1 1 92 26 Z"
+          fill="#1A1A1A" stroke="#FFE600" stroke-width="5" stroke-linejoin="round"/>
+    <!-- Two yellow eye-ovals, biased toward the mouth-opening side -->
+    <ellipse cx="42" cy="32" rx="6" ry="9" fill="#FFE600"/>
+    <ellipse cx="58" cy="32" rx="6" ry="9" fill="#FFE600"/>
+  </g>
+
+  <!-- Text block -->
+  <g transform="translate(220,90)">
+    <text class="kicker" x="0" y="0">BYTEME  NETWORKS</text>
+    <text class="title"  x="0" y="56">bmn-rf-survey-rig</text>
+    <text class="tag"    x="0" y="96">Always-on RF survey + toggleable DefCon-Mode captive-portal Rickroll</text>
+  </g>
+</svg>
